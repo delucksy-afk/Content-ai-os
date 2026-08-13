@@ -1,7 +1,7 @@
 # CHANGELOG
 
 บันทึกการเปลี่ยนแปลงของ Content AI OS
-
+[Constitution] จัดทำ Vision v0.1 และตรวจสอบความสอดคล้องกับ Mission แล้ว
 
 ## v0.1 Alpha — 2026-08-12
 
