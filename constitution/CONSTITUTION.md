@@ -1,321 +1,247 @@
 # Content AI OS Constitution
 
-**สถานะ:** Active Draft
+**สถานะ:** REVIEW
 **เวอร์ชัน:** v0.1
 **วันที่:** 2026-08-13
 
 ---
 
-# 1. Purpose
+## 1. Purpose
 
-Constitution คือกรอบสูงสุดสำหรับกำกับทิศทาง หลักการ มาตรฐาน และข้อจำกัดของ Content AI OS
-
-เอกสารนี้ทำหน้าที่เป็นศูนย์กลางที่เชื่อมโยง:
-
-* Mission
-* Vision
-* Core Principles
-* Evidence Policy
-* Citation Standard
-* Language Guide
-* Ethics Policy
-* Quality Standard
-
-เข้าด้วยกัน
+Constitution คือกรอบสูงสุดในการกำหนดทิศทาง หลักการ มาตรฐาน ขอบเขต และการกำกับดูแลของ Content AI OS
 
 ---
 
-# 2. Constitutional Hierarchy
-
-ลำดับของระบบคือ:
+## 2. Constitutional Hierarchy
 
 ```text
 MISSION
-เหตุผลของการมีอยู่
-       ↓
+   ↓
 VISION
-จุดหมายปลายทาง
-       ↓
+   ↓
 CORE PRINCIPLES
-หลักการตัดสินใจ
-       ↓
+   ↓
 POLICIES
-มาตรฐานและข้อกำหนด
-       ↓
+   ↓
+DECISION FRAMEWORK
+   ↓
 WORKFLOWS
-วิธีการปฏิบัติงาน
-       ↓
-TOOLS
-เครื่องมือที่ใช้
+   ↓
+TOOLS / IMPLEMENTATION
 ```
 
-สิ่งที่อยู่ระดับล่างไม่ควรขัดแย้งกับสิ่งที่อยู่ระดับสูงกว่า
+สิ่งที่อยู่ระดับล่างต้องไม่ขัดกับข้อกำหนดระดับสูงกว่า
 
 ---
 
-# 3. Mission
+## 3. Mission
 
-Mission กำหนดเหตุผลและภารกิจหลักของ Content AI OS
-
-รายละเอียดอยู่ใน:
+รายละเอียด:
 
 `MISSION.md`
 
 ---
 
-# 4. Vision
+## 4. Vision
 
-Vision กำหนดภาพปลายทางระยะยาวของ Content AI OS
-
-Content AI OS มุ่งพัฒนาไปสู่ระบบปัญญาด้าน Content ที่สามารถ:
-
-```text
-ข้อมูล
- ↓
-ความรู้
- ↓
-กลยุทธ์
- ↓
-Content
- ↓
-ผลลัพธ์
- ↓
-การเรียนรู้
- ↓
-การปรับปรุง
- ↺
-```
-
-รายละเอียดอยู่ใน:
+รายละเอียด:
 
 `VISION.md`
 
 ---
 
-# 5. Core Principles
+## 5. Core Principles
 
-Content AI OS ยึดหลักสำคัญดังต่อไปนี้:
-
-1. ความถูกต้องมาก่อนความเร็ว
-2. หลักฐานมาก่อนข้อสันนิษฐาน
-3. มนุษย์ยังเป็นผู้กำกับการตัดสินใจที่สำคัญ
-4. สร้างระบบ ไม่ใช่เพียงทำงานให้เสร็จ
-5. นำสิ่งที่มีอยู่กลับมาใช้ก่อนสร้างใหม่
-6. ออกแบบให้เป็นโมดูล
-7. เรียนรู้จากผลลัพธ์จริง
-8. คุณภาพมาก่อนปริมาณ
-9. เรียบง่ายก่อนซับซ้อน
-10. ออกแบบโดยยอมรับว่าทุกอย่างเปลี่ยนแปลง
-11. Automation ทุกอย่างต้องมีการกำกับดูแล
-12. ปรับปรุงระบบ ไม่ใช่เพียง Output
-
-รายละเอียดอยู่ใน:
+รายละเอียด:
 
 `CORE-PRINCIPLES.md`
 
 ---
 
-# 6. Evidence Policy
+## 6. Evidence Policy
 
-ระบบต้องแยกข้อเท็จจริงออกจากความคิดเห็น การตีความ สมมติฐาน และการคาดการณ์
-
-AI Output ไม่ถือเป็น Evidence โดยอัตโนมัติ
-
-ข้อมูลที่มีความสำคัญสูงต้องได้รับการตรวจสอบตามระดับความเสี่ยงและความน่าเชื่อถือของแหล่งข้อมูล
-
-รายละเอียดอยู่ใน:
+รายละเอียด:
 
 `EVIDENCE-POLICY.md`
 
 ---
 
-# 7. Citation Standard
+## 7. Citation Standard
 
-ข้อกล่าวอ้างสำคัญที่สามารถตรวจสอบได้ควรมีแหล่งอ้างอิงที่เหมาะสม
-
-Citation ต้องสนับสนุนข้อความจริง และต้องไม่ถูกสร้างขึ้นโดยไม่มีการตรวจสอบ
-
-รายละเอียดอยู่ใน:
+รายละเอียด:
 
 `CITATION-STANDARD.md`
 
 ---
 
-# 8. Language Standard
+## 8. Language Guide
 
-ภาษาไทยเป็นภาษาหลักและเป็น Source of Truth ของเอกสาร Constitution
+รายละเอียด:
 
-ภาษาอังกฤษสามารถใช้ประกอบ Technical Terms ได้
+`LANGUAGE-GUIDE.md`
 
-หากภาษาไทยและภาษาอังกฤษมีความหมายขัดกัน ให้ยึดภาษาไทยเป็นหลักจนกว่าจะมีการแก้ไขอย่างเป็นทางการ
+ภาษาไทยเป็น Source of Truth สำหรับ Constitution
 
-รายละเอียดอยู่ใน:
+รายละเอียด:
 
 `LANGUAGE-GUIDE.md`
 
 ---
 
-# 9. Ethics
+## 9. Ethics Policy
 
-Content AI OS ต้องดำเนินงานโดยคำนึงถึง:
-
-* ความซื่อสัตย์
-* ความโปร่งใส
-* ความรับผิดชอบ
-* ความเป็นส่วนตัว
-* สิทธิในผลงาน
-* การไม่หลอกลวง
-* ข้อจำกัดของ AI
-* ระดับความเสี่ยงของ Automation
-
-ประสิทธิภาพของระบบไม่สามารถเป็นเหตุผลเพียงอย่างเดียวในการละเลยข้อกำหนดด้านจริยธรรม
-
-รายละเอียดอยู่ใน:
+รายละเอียด:
 
 `ETHICS-POLICY.md`
 
 ---
 
-# 10. Quality
+## 10. Quality Standard
 
-Output ที่มีคุณภาพต้องพิจารณาอย่างน้อย:
-
-* Accuracy
-* Relevance
-* Clarity
-* Usefulness
-* Evidence Quality
-* Originality / Value
-* Consistency
-* Appropriate Human Review
-
-รายละเอียดอยู่ใน:
+รายละเอียด:
 
 `QUALITY-STANDARD.md`
 
 ---
 
-# 11. Decision Priority
+## 11. Decision Framework
 
-เมื่อเกิดความขัดแย้งระหว่างเป้าหมาย ให้ใช้ลำดับพิจารณาโดยทั่วไป:
+รายละเอียด:
 
-```text
-ความปลอดภัยและจริยธรรม
-        ↓
-ความถูกต้องและ Evidence
-        ↓
-ความรับผิดชอบของมนุษย์
-        ↓
-คุณภาพ
-        ↓
-ความสามารถในการเรียนรู้
-        ↓
-ความยั่งยืนของระบบ
-        ↓
-ประสิทธิภาพ
-        ↓
-ความเร็ว
-        ↓
-ปริมาณ
-```
-
-ลำดับนี้เป็นกรอบการตัดสินใจ ไม่ใช่กฎตายตัวสำหรับทุกสถานการณ์
+`DECISION-FRAMEWORK.md`
 
 ---
 
-# 12. Source of Truth
+## 12. Scope and Boundaries
 
-เมื่อเกิดความขัดแย้ง:
+รายละเอียด:
 
-```text
-Constitution
-    >
-Policies
-    >
-Workflows
-    >
-Tools
-```
-
-สิ่งที่อยู่ระดับล่างต้องได้รับการแก้ไขให้สอดคล้องกับระดับบน เว้นแต่มีการเปลี่ยน Constitution อย่างเป็นทางการ
+`SCOPE-AND-BOUNDARIES.md`
 
 ---
 
-# 13. Change Control
+## 13. Definitions
 
-การเปลี่ยนแปลงส่วนสำคัญของ Constitution ต้อง:
+คำสำคัญของระบบต้องใช้ความหมายเดียวกันตาม:
+
+`DEFINITIONS.md`
+
+---
+
+## 14. Conflict Resolution
+
+เมื่อเอกสารหรือข้อกำหนดขัดแย้งกัน ให้ตรวจตามลำดับ:
+
+1. Mission
+2. Vision
+3. Core Principles
+4. Ethics
+5. Evidence Policy
+6. Quality Standard
+7. Decision Framework
+8. Workflow
+9. Tool / Implementation
+
+หากยังไม่สามารถตัดสินใจได้ ให้ส่งต่อ Human Review
+
+หากพบว่าข้อขัดแย้งเกิดจาก Constitution เอง ต้องหยุดการเปลี่ยนแปลงที่มีผลกระทบสูงและพิจารณาปรับ Constitution อย่างเป็นทางการ
+
+---
+
+## 15. Change Control
+
+การเปลี่ยนแปลง Constitution ต้อง:
 
 1. ระบุสิ่งที่เปลี่ยน
 2. ระบุเหตุผล
-3. ตรวจสอบผลกระทบ
+3. ประเมินผลกระทบ
 4. ตรวจสอบเอกสารที่เกี่ยวข้อง
-5. ปรับ Version เมื่อเหมาะสม
+5. เพิ่มหรือปรับ Version ตามความเหมาะสม
 6. บันทึกใน CHANGELOG
 
+การเปลี่ยนแปลงที่กระทบ Mission หรือ Vision ถือเป็นการเปลี่ยนแปลงระดับสูงและต้องได้รับการพิจารณาเป็นพิเศษ
+
 ---
 
-# 14. Relationship to Other Systems
+## 16. Source of Truth
 
-Constitution ไม่ได้กำหนดรายละเอียดของทุก Workflow
+เมื่อเกิดความขัดแย้ง ให้ยึดเอกสารที่อยู่ในระดับสูงกว่าเป็นหลัก
 
-แต่เป็นกรอบที่ทุกระบบภายใต้ Content AI OS ต้องสอดคล้องด้วย
+Tool และ Workflow ไม่สามารถเปลี่ยนหลักการของ Constitution โดยไม่ได้รับการอนุมัติ
 
-ตัวอย่าง:
+---
+
+## 17. Language
+
+ภาษาไทยเป็นภาษาหลักและ Source of Truth ของ Constitution
+
+ภาษาอังกฤษใช้เป็น Technical Term หรือภาษาประกอบเมื่อจำเป็น
+
+---
+
+## 18. Version Control
+
+สถานะของ Constitution:
 
 ```text
-02 Research
-ต้องสอดคล้องกับ
-Evidence Policy + Citation Standard
-
-03 Knowledge
-ต้องสอดคล้องกับ
-Evidence + Quality + Language
-
-04 Prompt
-ต้องสอดคล้องกับ
-Principles + Ethics + Quality
-
-05 Workflow
-ต้องสอดคล้องกับ
-Principles + Governance
-
-06 Script
-ต้องสอดคล้องกับ
-Quality + Evidence + Language
-
-07 Thumbnail
-ต้องสอดคล้องกับ
-Quality + Ethics
-
-08 Automation
-ต้องสอดคล้องกับ
-Principles + Ethics + Human Governance
+DRAFT
+→ REVIEW
+→ APPROVED
+→ ACTIVE
+→ SUPERSEDED
 ```
+
+ปัจจุบัน:
+
+**Constitution v0.1 — REVIEW**
+
+เมื่อ Final Review ผ่าน:
+
+**Constitution v0.1 — ACTIVE**
 
 ---
 
-# 15. Constitutional Principle
+## 19. Constitutional Principle
 
 > **ระบบสามารถเปลี่ยนวิธีการได้ แต่ต้องไม่เปลี่ยนทิศทางโดยไม่รู้ตัว**
 
 Tools เปลี่ยนได้
 
-AI Model เปลี่ยนได้
+AI Models เปลี่ยนได้
 
-Workflow เปลี่ยนได้
+Workflows เปลี่ยนได้
 
 Automation เปลี่ยนได้
 
-แต่การเปลี่ยนแปลงเหล่านั้นต้องยังคงสอดคล้องกับ Mission, Vision และ Core Principles
+แต่สิ่งเหล่านี้ต้องยังคงสอดคล้องกับ Mission, Vision และ Core Principles
 
 ---
 
-# 16. Version
+## 20. Constitution Documents
 
-**Content AI OS Constitution v0.1**
+| เอกสาร                    | หน้าที่                   |
+| ------------------------- | ------------------------- |
+| `MISSION.md`              | เหตุผลและภารกิจ           |
+| `VISION.md`               | จุดหมายระยะยาว            |
+| `CORE-PRINCIPLES.md`      | หลักการตัดสินใจ           |
+| `EVIDENCE-POLICY.md`      | หลักเกณฑ์ด้าน Evidence    |
+| `CITATION-STANDARD.md`    | มาตรฐานการอ้างอิง         |
+| `LANGUAGE-GUIDE.md`       | มาตรฐานภาษา               |
+| `ETHICS-POLICY.md`        | ขอบเขตด้านจริยธรรม        |
+| `QUALITY-STANDARD.md`     | มาตรฐานคุณภาพ             |
+| `DECISION-FRAMEWORK.md`   | วิธีตัดสินใจ              |
+| `SCOPE-AND-BOUNDARIES.md` | ขอบเขตของระบบ             |
+| `DEFINITIONS.md`          | คำจำกัดความ               |
+| `CONSTITUTION.md`         | เอกสารแม่ของ Constitution |
 
-สถานะ:
+---
 
-**Ready for Research Phase**
+## 21. Current Status
 
-การเปลี่ยนแปลงหลังจากนี้ควรถูกบันทึกผ่าน Version และ CHANGELOG ตามความเหมาะสม
+**Constitution v0.1 — REVIEW**
+
+หลังจากตรวจสอบเอกสารทั้งหมดและยืนยันว่าไม่มีข้อขัดแย้งสำคัญ จึงเปลี่ยนสถานะเป็น:
+
+**Constitution v0.1 — ACTIVE**
+
+จากนั้นจึงสามารถเริ่ม `02 Research` ได้
