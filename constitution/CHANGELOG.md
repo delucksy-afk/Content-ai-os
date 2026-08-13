@@ -1,32 +1,21 @@
-# CHANGELOG
-
-บันทึกการเปลี่ยนแปลงของ Content AI OS
-
-
-## v0.1 Alpha — 2026-08-12
+## [Constitution] Constitution v0.1
 
 ### Added
 
-- เริ่มต้นโครงการ Content AI OS
-- กำหนดโครงสร้างหลักของระบบ
-- กำหนด Buddhist Module เป็นโมดูลแรก
-- สร้าง Constitution Module
-- สร้าง Project Overview
-- สร้าง Mission v0.1
-- [Constitution] จัดทำ Vision v0.1 และตรวจสอบความสอดคล้องกับ Mission แล้ว
-- เพิ่ม Core Principles ของ Constitution
+* จัดทำ Vision v0.1
+* ตรวจสอบความสอดคล้องระหว่าง Mission และ Vision
+* จัดทำ Core Principles
+* จัดทำ Evidence Policy
+* จัดทำ Citation Standard
+* จัดทำ Language Guide
+* จัดทำ Ethics Policy
+* จัดทำ Quality Standard
+* จัดทำ Constitution v0.1
 
-### Current Focus
+### Decision
 
-กำลังพัฒนา Constitution v0.1
+กำหนดให้ภาษาไทยเป็น Source of Truth สำหรับเอกสารหลักของ Content AI OS โดยสามารถใช้ภาษาอังกฤษประกอบสำหรับ Technical Terms
 
+### Status
 
-### Next
-
-- Vision
-- Core Principles
-- Evidence Policy
-- Citation Standard
-- Language Guide
-- Ethics Policy
-- Quality Standard
+**Constitution v0.1 — Ready for Research Phase**
