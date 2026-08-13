@@ -1,6 +1,6 @@
 # Content AI OS Constitution
 
-**สถานะ:** REVIEW
+**สถานะ:** ACTIVE
 **เวอร์ชัน:** v0.1
 **วันที่:** 2026-08-13
 
@@ -193,10 +193,6 @@ DRAFT
 
 ปัจจุบัน:
 
-**Constitution v0.1 — REVIEW**
-
-เมื่อ Final Review ผ่าน:
-
 **Constitution v0.1 — ACTIVE**
 
 ---
@@ -238,10 +234,5 @@ Automation เปลี่ยนได้
 
 ## 21. Current Status
 
-**Constitution v0.1 — REVIEW**
-
-หลังจากตรวจสอบเอกสารทั้งหมดและยืนยันว่าไม่มีข้อขัดแย้งสำคัญ จึงเปลี่ยนสถานะเป็น:
-
 **Constitution v0.1 — ACTIVE**
 
-จากนั้นจึงสามารถเริ่ม `02 Research` ได้
