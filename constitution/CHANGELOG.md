@@ -14,6 +14,7 @@
 - สร้าง Project Overview
 - สร้าง Mission v0.1
 - [Constitution] จัดทำ Vision v0.1 และตรวจสอบความสอดคล้องกับ Mission แล้ว
+- เพิ่ม Core Principles ของ Constitution
 
 ### Current Focus
 
