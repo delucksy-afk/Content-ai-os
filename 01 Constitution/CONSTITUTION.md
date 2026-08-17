@@ -1,14 +1,16 @@
 # Content AI OS Constitution
 
-**สถานะ:** ACTIVE
-**เวอร์ชัน:** v0.1
-**วันที่:** 2026-08-13
+**สถานะ:** ACTIVE  
+**เวอร์ชัน:** v0.1  
+**วันที่ปรับปรุงล่าสุด:** 2026-08-17
 
 ---
 
 ## 1. Purpose
 
 Constitution คือกรอบสูงสุดในการกำหนดทิศทาง หลักการ มาตรฐาน ขอบเขต และการกำกับดูแลของ Content AI OS
+
+เอกสารระดับล่างทั้งหมดต้องสอดคล้องกับ Constitution และไม่สามารถเปลี่ยนหลักการระดับ Constitution โดยลำพัง
 
 ---
 
@@ -21,7 +23,7 @@ VISION
    ↓
 CORE PRINCIPLES
    ↓
-POLICIES
+POLICIES / STANDARDS
    ↓
 DECISION FRAMEWORK
    ↓
@@ -34,108 +36,96 @@ TOOLS / IMPLEMENTATION
 
 ---
 
-## 3. Mission
+## 3. Constitution Documents
 
-รายละเอียด:
-
-`MISSION.md`
-
----
-
-## 4. Vision
-
-รายละเอียด:
-
-`VISION.md`
-
----
-
-## 5. Core Principles
-
-รายละเอียด:
-
-`CORE-PRINCIPLES.md`
+| เอกสาร | หน้าที่ |
+|---|---|
+| `MISSION.md` | เหตุผลและภารกิจ |
+| `VISION.md` | จุดหมายระยะยาว |
+| `CORE-PRINCIPLES.md` | หลักการพื้นฐานในการตัดสินใจ |
+| `EVIDENCE-POLICY.md` | หลักเกณฑ์ด้าน Evidence |
+| `CITATION-STANDARD.md` | มาตรฐานการอ้างอิง |
+| `LANGUAGE-GUIDE.md` | มาตรฐานภาษา |
+| `ETHICS-POLICY.md` | ขอบเขตด้านจริยธรรม |
+| `QUALITY-STANDARD.md` | มาตรฐานคุณภาพ |
+| `DECISION-FRAMEWORK.md` | วิธีตัดสินใจ |
+| `SCOPE-AND-BOUNDARIES.md` | ขอบเขตของระบบ |
+| `DEFINITIONS.md` | คำจำกัดความกลางของระบบ |
+| `CHANGELOG.md` | ประวัติการเปลี่ยนแปลง Constitution |
+| `CONSTITUTION.md` | เอกสารแม่ของ Constitution |
 
 ---
 
-## 6. Evidence Policy
+## 4. Mission
 
-รายละเอียด:
+รายละเอียดอยู่ใน `MISSION.md`
 
-`EVIDENCE-POLICY.md`
-
----
-
-## 7. Citation Standard
-
-รายละเอียด:
-
-`CITATION-STANDARD.md`
+Mission กำหนดเหตุผลและภารกิจหลักของระบบ
 
 ---
 
-## 8. Language Guide
+## 5. Vision
 
-รายละเอียด:
+รายละเอียดอยู่ใน `VISION.md`
 
-`LANGUAGE-GUIDE.md`
-
-ภาษาไทยเป็น Source of Truth สำหรับ Constitution
-
-รายละเอียด:
-
-`LANGUAGE-GUIDE.md`
+Vision กำหนดภาพปลายทางระยะยาวของระบบ
 
 ---
 
-## 9. Ethics Policy
+## 6. Core Principles
 
-รายละเอียด:
+รายละเอียดอยู่ใน `CORE-PRINCIPLES.md`
 
-`ETHICS-POLICY.md`
-
----
-
-## 10. Quality Standard
-
-รายละเอียด:
-
-`QUALITY-STANDARD.md`
+Core Principles ใช้เป็นหลักในการตัดสินใจเมื่อไม่มีคำตอบที่กำหนดไว้โดยตรง
 
 ---
 
-## 11. Decision Framework
+## 7. Evidence, Citation, Language, Ethics and Quality
 
-รายละเอียด:
+มาตรฐานที่เกี่ยวข้องอยู่ใน:
 
-`DECISION-FRAMEWORK.md`
+- `EVIDENCE-POLICY.md`
+- `CITATION-STANDARD.md`
+- `LANGUAGE-GUIDE.md`
+- `ETHICS-POLICY.md`
+- `QUALITY-STANDARD.md`
 
----
-
-## 12. Scope and Boundaries
-
-รายละเอียด:
-
-`SCOPE-AND-BOUNDARIES.md`
+เอกสารเหล่านี้ต้องตีความร่วมกับ Mission, Vision และ Core Principles
 
 ---
 
-## 13. Definitions
+## 8. Decision Framework
 
-คำสำคัญของระบบต้องใช้ความหมายเดียวกันตาม:
+รายละเอียดอยู่ใน `DECISION-FRAMEWORK.md`
 
-`DEFINITIONS.md`
+เมื่อมีทางเลือกหลายทาง ให้ใช้กรอบการตัดสินใจแทนการตัดสินตามความสะดวกเพียงอย่างเดียว
 
 ---
 
-## 14. Conflict Resolution
+## 9. Scope and Boundaries
+
+รายละเอียดอยู่ใน `SCOPE-AND-BOUNDARIES.md`
+
+สิ่งที่อยู่นอกขอบเขตต้องไม่ถูกนำเข้ามาเป็นข้อกำหนดของระบบโดยไม่มีการพิจารณาอย่างเป็นทางการ
+
+---
+
+## 10. Definitions
+
+คำสำคัญของระบบต้องใช้ความหมายเดียวกันตาม `DEFINITIONS.md`
+
+หากมีคำใหม่ที่มีผลต่อการตัดสินใจหรือสถาปัตยกรรม ควรเพิ่มคำจำกัดความก่อนนำไปใช้เป็นมาตรฐานกลาง
+
+---
+
+## 11. Conflict Resolution
 
 เมื่อเอกสารหรือข้อกำหนดขัดแย้งกัน ให้ตรวจตามลำดับ:
 
 1. Mission
 2. Vision
 3. Core Principles
-4. Ethics
+4. Ethics Policy
 5. Evidence Policy
 6. Quality Standard
 7. Decision Framework
@@ -148,7 +138,7 @@ TOOLS / IMPLEMENTATION
 
 ---
 
-## 15. Change Control
+## 12. Change Control
 
 การเปลี่ยนแปลง Constitution ต้อง:
 
@@ -156,14 +146,14 @@ TOOLS / IMPLEMENTATION
 2. ระบุเหตุผล
 3. ประเมินผลกระทบ
 4. ตรวจสอบเอกสารที่เกี่ยวข้อง
-5. เพิ่มหรือปรับ Version ตามความเหมาะสม
-6. บันทึกใน CHANGELOG
+5. ปรับ Version ตามความเหมาะสม
+6. บันทึกใน `CHANGELOG.md`
 
 การเปลี่ยนแปลงที่กระทบ Mission หรือ Vision ถือเป็นการเปลี่ยนแปลงระดับสูงและต้องได้รับการพิจารณาเป็นพิเศษ
 
 ---
 
-## 16. Source of Truth
+## 13. Source of Truth
 
 เมื่อเกิดความขัดแย้ง ให้ยึดเอกสารที่อยู่ในระดับสูงกว่าเป็นหลัก
 
@@ -171,7 +161,7 @@ Tool และ Workflow ไม่สามารถเปลี่ยนหล�
 
 ---
 
-## 17. Language
+## 14. Language
 
 ภาษาไทยเป็นภาษาหลักและ Source of Truth ของ Constitution
 
@@ -179,7 +169,7 @@ Tool และ Workflow ไม่สามารถเปลี่ยนหล�
 
 ---
 
-## 18. Version Control
+## 15. Version Control
 
 สถานะของ Constitution:
 
@@ -197,7 +187,7 @@ DRAFT
 
 ---
 
-## 19. Constitutional Principle
+## 16. Constitutional Principle
 
 > **ระบบสามารถเปลี่ยนวิธีการได้ แต่ต้องไม่เปลี่ยนทิศทางโดยไม่รู้ตัว**
 
@@ -213,26 +203,6 @@ Automation เปลี่ยนได้
 
 ---
 
-## 20. Constitution Documents
-
-| เอกสาร                    | หน้าที่                   |
-| ------------------------- | ------------------------- |
-| `MISSION.md`              | เหตุผลและภารกิจ           |
-| `VISION.md`               | จุดหมายระยะยาว            |
-| `CORE-PRINCIPLES.md`      | หลักการตัดสินใจ           |
-| `EVIDENCE-POLICY.md`      | หลักเกณฑ์ด้าน Evidence    |
-| `CITATION-STANDARD.md`    | มาตรฐานการอ้างอิง         |
-| `LANGUAGE-GUIDE.md`       | มาตรฐานภาษา               |
-| `ETHICS-POLICY.md`        | ขอบเขตด้านจริยธรรม        |
-| `QUALITY-STANDARD.md`     | มาตรฐานคุณภาพ             |
-| `DECISION-FRAMEWORK.md`   | วิธีตัดสินใจ              |
-| `SCOPE-AND-BOUNDARIES.md` | ขอบเขตของระบบ             |
-| `DEFINITIONS.md`          | คำจำกัดความ               |
-| `CONSTITUTION.md`         | เอกสารแม่ของ Constitution |
-
----
-
-## 21. Current Status
+## 17. Current Status
 
 **Constitution v0.1 — ACTIVE**
-
