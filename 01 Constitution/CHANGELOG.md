@@ -25,7 +25,13 @@
 - ย้าย Project Overview ไปยัง `00 Project Overview/`
 - กำหนดภาษาไทยเป็น Source of Truth สำหรับ Constitution
 - ปรับเอกสารแม่ของ Constitution ให้สอดคล้องกับสถานะ ACTIVE
+- เปลี่ยนเอกสารย่อยของ Constitution จาก Draft เป็น ACTIVE หลังตรวจความสอดคล้อง
 - แก้ไข Definition ที่มีหัวข้อ Version ซ้ำ
+- เพิ่ม Research Output Contract ใน `02 Research/templates/`
+
+### Consistency Check
+
+ตรวจสอบเอกสาร Constitution ระดับ v0.1 แล้ว และกำหนดให้เอกสารหลักและเอกสารนโยบายที่เป็นส่วนประกอบของ Constitution ใช้สถานะ ACTIVE อย่างสอดคล้องกัน
 
 ### Decision
 
