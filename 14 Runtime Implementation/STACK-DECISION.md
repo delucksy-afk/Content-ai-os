@@ -1,10 +1,23 @@
 # Initial Stack Decision
 
-**Status:** DECISION PENDING — criteria established
+**Status:** DECIDED — v0.1
 
-## Principle
+## Decision
 
-อย่าเลือกเครื่องมือเพราะเป็นของยอดนิยม ให้เลือกจากความเหมาะสมกับ Content AI OS และความสามารถในการตรวจสอบย้อนหลัง
+`n8n` is the first Automation / Orchestration Layer for Content AI OS.
+
+This decision applies to the first Runtime Vertical Slice (`VS-001`) and does not prohibit future evaluation of alternatives.
+
+## Supporting Stack
+
+| Layer | v0.1 choice | Status |
+|---|---|---|
+| Source of Truth | GitHub | ACTIVE |
+| Orchestration | n8n | SELECTED |
+| Initial AI Provider | Gemini | CANDIDATE / TEST |
+| Artifact Storage | Google Drive | TEST PLANNED |
+| V1 Operational Data | Google Sheets | TEST PLANNED |
+| Public Web Layer | gmterminal.today | MIGRATION PLANNED |
 
 ## Evaluation Criteria
 
@@ -23,8 +36,13 @@
 
 เลือก Stack ที่ทำให้ Vertical Slice `VS-001` ผ่านได้ด้วยความซับซ้อนต่ำที่สุด โดยไม่ลด Security, Traceability หรือ Quality Controls
 
-## Current Decision
+## Important Boundary
 
-**ยังไม่ lock vendor**
+`gmterminal.today` เป็น Public Web / User Interface candidate ไม่ใช่ Source of Truth และไม่ควรเก็บ secrets หรือ workflow definitions สำคัญไว้ใน frontend
 
-ขั้นถัดไปคือระบุเครื่องมือที่ผู้ใช้มีอยู่แล้ว และตรวจ permissions ก่อนเลือก integration จริง
+## Current Gate
+
+n8n = **SELECTED**  
+Gemini = **TEST CANDIDATE**  
+Google Drive / Sheets = **TEST PLANNED**  
+`gmterminal.today` = **MIGRATION PLANNED — DNS/HOSTING NOT CHANGED YET**
