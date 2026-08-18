@@ -20,9 +20,17 @@
 - End-to-end contract testing
 - Deployment and rollback
 
+## Runtime Decision
+
+`n8n` ถูกเลือกเป็น Orchestration Layer ตัวแรกสำหรับ `VS-001` โดยรายละเอียดการตัดสินใจอยู่ที่ `14 Runtime Implementation/STACK-DECISION.md`
+
+## Public Web Boundary
+
+`gmterminal.today` ถูกกำหนดเป็น Public Web / User Interface candidate ของระบบในระยะ v0.1 โดยยัง **ไม่มีการเปลี่ยน DNS หรือ Hosting target** จนกว่าจะผ่าน Domain Migration Gate
+
 ## Non-Goals
 
-ยังไม่เลือก Vendor หรือ Platform ถาวรใน v0.1 และยังไม่ถือว่า Production Ready จนกว่าจะผ่าน Runtime Validation
+ยังไม่ถือว่า Production Ready จนกว่าจะผ่าน Runtime Validation และไม่ให้ Public Web Layer เป็น Source of Truth ของระบบ
 
 ## Runtime Flow
 
