@@ -1,7 +1,7 @@
 # n8n Setup Plan
 
-**สถานะ:** READY — WAITING FOR USER ENVIRONMENT
-**Runtime:** n8n
+**สถานะ:** READY — ENVIRONMENT AVAILABLE  
+**Runtime:** n8n  
 **Version:** v0.1
 
 ## Goal
@@ -32,19 +32,9 @@ Write measurement event
 Return run result
 ```
 
-## Environment Recommendation
+## Environment
 
-เริ่มจาก **n8n Cloud trial/free availability หากบัญชีและแผนปัจจุบันรองรับ** หรือ self-hosted test instance หากต้องการควบคุมระบบเอง
-
-ก่อนเลือกแบบถาวร ให้เปรียบเทียบ:
-
-- Cost
-- Reliability
-- Secret management
-- Backup
-- Maintenance
-- Webhook accessibility
-- Execution history
+ผู้ใช้ยืนยันแล้วว่ามี n8n พร้อมใช้งาน แต่ก่อน Execute ต้องยืนยันว่า Environment สำหรับ VS-001 เป็น TEST/DEV และมี Credential Store ที่เหมาะสม
 
 ## Security
 
