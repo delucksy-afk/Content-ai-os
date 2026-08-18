@@ -1,18 +1,16 @@
 # gmterminal.today — Domain Migration Plan
 
-**สถานะ:** PLANNED — NO DNS CHANGE
+**สถานะ:** APPROVED FOR BUILD — NO DNS CUTOVER YET
+
+## Owner Decision
+
+เจ้าของระบบยืนยันว่าเว็บไซต์เดิมไม่ได้ใช้งานจริง และไม่จำเป็นต้องรักษา UI / Business Logic / Data ของเว็บไซต์เดิมไว้
+
+ดังนั้น `gmterminal.today` สามารถย้ายมาเป็น Public Web ของ Content AI OS ได้โดยตรง
 
 ## Current State Verified
 
-The GitHub account contains a private repository named `delucksy-afk/gmterminal` with a single `index.html` at repository root. The page title is currently `Smart Trading Academy - Grandmaster v9.3`, so this repository is not yet a neutral Content AI OS frontend.
-
-## Decision
-
-We will **reuse the domain** `gmterminal.today` for Content AI OS, but we will not immediately repoint the domain or overwrite the existing site.
-
-## Why
-
-The existing domain already has a web asset, while Content AI OS needs a new Public Web Layer. A direct replacement without a staging and rollback path could cause unnecessary downtime or loss of the existing site.
+Repository `delucksy-afk/gmterminal` มี `index.html` เดิมเพียงไฟล์หลัก และเป็นเว็บไซต์ Trading เดิมที่ไม่ใช่เป้าหมายของ Content AI OS
 
 ## Target
 
@@ -21,54 +19,45 @@ gmterminal.today
       ↓
 Content AI OS Public Web
       ↓
-Authenticated / scoped API layer
+Scoped / Authenticated API boundary
       ↓
 n8n Runtime
       ↓
 Content AI OS Core
 ```
 
-## Migration Options
+## Migration Decision
 
-### Option A — Replace current root site
+**เลือก Direct Replacement**
 
-Use `gmterminal.today` directly for the Content AI OS web UI.
+ไม่จำเป็นต้องใช้ `app.gmterminal.today` เป็นทางผ่านระยะยาว เพราะเจ้าของระบบยืนยันแล้วว่าเว็บไซต์เดิมไม่มีภารกิจที่ต้องรักษาไว้
 
-**Use only after staging and backup.**
+## Required Sequence
 
-### Option B — Keep current root and use a subdomain
+1. Build Public Web v0.1 ใน `Content-ai-os`
+2. Deploy staging
+3. ตรวจ desktop / mobile / HTTPS
+4. ตรวจ API boundary และไม่ให้ frontend เปิดเผย secrets
+5. ตั้ง custom domain `gmterminal.today` ให้กับ deployment ใหม่
+6. ตรวจ DNS propagation
+7. Smoke test หน้าเว็บ
+8. เมื่อยืนยันว่าเว็บใหม่ทำงานแล้ว จึง archive/remove เว็บไซต์เดิม
 
-Example architecture:
+## DNS / Hosting Boundary
 
-```text
-gmterminal.today        → existing public site
-app.gmterminal.today    → Content AI OS
-```
+การเปลี่ยน DNS ต้องทำที่ผู้ให้บริการ DNS ของโดเมน เพราะ GitHub connector ที่ใช้อยู่ไม่มีสิทธิ์จัดการ DNS provider ของผู้ใช้โดยตรง
 
-This is the safest transition if the existing site still has value.
+## Old Repository Cleanup
 
-### Option C — Rebuild the existing site as the Public Web Layer
+`delucksy-afk/gmterminal` ไม่ต้องถูก merge เข้า `Content-ai-os`
 
-Retain useful UI concepts/assets, but rewrite the frontend around Content AI OS requirements.
+หลัง Domain Cutover สำเร็จ:
 
-## Recommended v0.1
+- archive repository เดิม หรือ
+- ลบ repository เดิม หากเจ้าของระบบยืนยันอีกครั้ง
 
-**Option B first**, then decide whether the Content AI OS interface should eventually become the root domain.
+**ห้ามลบก่อนยืนยันว่า Domain ใหม่ทำงานสำเร็จ** เพื่อป้องกัน downtime โดยไม่จำเป็น
 
-## DNS / Hosting Gate
+## Rollback
 
-Before any DNS change:
-
-- confirm current DNS provider
-- confirm current hosting target
-- back up existing site
-- create staging deployment
-- test HTTPS
-- test mobile layout
-- test authentication boundaries
-- confirm API does not expose privileged credentials
-- define rollback target
-
-## Important
-
-This repository does not currently change DNS. Domain configuration must be performed at the actual DNS / hosting provider after the migration gate is approved.
+Rollback คือการคืน DNS target ไปยัง hosting เดิมก่อนลบ/ทำลายข้อมูลเดิม หากพบปัญหาระหว่าง cutover
