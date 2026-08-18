@@ -1,15 +1,29 @@
 # 15 Public Web Layer
 
-**สถานะ:** PLANNED — DOMAIN MIGRATION GATE  
+**สถานะ:** BUILDING — DOMAIN MIGRATION
 **เวอร์ชัน:** v0.1
 
-## Purpose
+## Decision
 
-กำหนด Public Web Layer ของ Content AI OS โดยใช้ `gmterminal.today` เป็นโดเมนสาธารณะที่วางไว้หน้าระบบ โดยแยก Public UI ออกจาก Source of Truth และ Runtime
+`gmterminal.today` จะถูกนำมาใช้เป็น Public Web Layer ของ Content AI OS
 
-## Current Reality
+เว็บไซต์เดิมใน repository `delucksy-afk/gmterminal` ไม่ได้ใช้งานจริงตามที่เจ้าของระบบยืนยันแล้ว จึงไม่จำเป็นต้องรักษา UI / Business Logic เดิมไว้เป็นส่วนหนึ่งของระบบใหม่
 
-โดเมนและเว็บไซต์ `gmterminal.today` ปัจจุบันอยู่กับ repository `delucksy-afk/gmterminal` ซึ่งมี `index.html` เป็นเว็บไซต์เดิม ดังนั้นยังไม่ควรเปลี่ยน DNS/Hosting target ทันที
+## Repository Boundary
+
+```text
+Content-ai-os
+└── Public Web Layer
+    └── web/
+
+n8n
+└── Runtime / Orchestration
+
+gmterminal.today
+└── Public Domain
+```
+
+GitHub `Content-ai-os` ยังคงเป็น Source of Truth ของ Architecture, Policy, Runtime Specification และ Public Web source
 
 ## Target Architecture
 
@@ -17,42 +31,41 @@
 gmterminal.today
       │
       ▼
-Public Web Layer
+Public Web
       │
-      ├── Landing / Dashboard
-      ├── Content Operations UI
-      └── Runtime Status / Reports
-              │
-              ▼
-          n8n / APIs
-              │
-              ▼
-       Content AI OS Core
-              │
-              ▼
-           GitHub
+      ▼
+Scoped / Authenticated API boundary
+      │
+      ▼
+n8n Runtime
+      │
+      ▼
+Content AI OS Core
 ```
 
-## Boundary
+## Migration Policy
 
-- GitHub = Source of Truth
-- n8n = Runtime / Orchestration
-- Public Web = Interface / Presentation Layer
-- Secrets must remain outside frontend code
-- Public Web must not directly expose privileged credentials
+- ไม่เก็บเว็บไซต์ Trading เดิมไว้ใน Public Web ใหม่
+- ไม่ย้าย secrets ไป frontend
+- ไม่ให้ frontend เรียก privileged APIs โดยตรง
+- เริ่มด้วย staging deployment ก่อนเปลี่ยน DNS
+- เมื่อ staging ผ่าน จึงชี้ `gmterminal.today` มายัง Public Web ใหม่
+- หลัง DNS migration สำเร็จและยืนยันการทำงานแล้ว จึง archive/remove repository เดิมตามขั้นตอน cleanup
 
-## Migration Gate
+## Current Web Source
 
-ห้ามเปลี่ยน DNS หรือ Hosting จนกว่าจะผ่าน:
+`web/` คือ source สำหรับ Public Web v0.1
 
-1. ตรวจเว็บไซต์เดิม
-2. ตัดสินใจว่าจะย้าย / เปลี่ยน / แยก subdomain
-3. สร้าง Public Web v0.1
-4. ทดสอบบน staging URL
-5. ตรวจ security และ mobile behavior
-6. เตรียม rollback
-7. จึงเปลี่ยน DNS
+## DNS Gate
 
-## Recommended Direction
+DNS ยังต้องเปลี่ยนที่ผู้ให้บริการ DNS/Hosting ของโดเมน เพราะ GitHub connector ไม่ได้มีสิทธิ์จัดการ DNS provider ของผู้ใช้โดยตรง
 
-ไม่ merge `gmterminal` repository เข้า `Content-ai-os` โดยตรงใน v0.1 เพราะหน้าที่ต่างกันชัดเจน ให้ `gmterminal` เป็น Web Layer repository และ `Content-ai-os` เป็น OS / Architecture / Runtime Source of Truth ก่อน
+ก่อน cutover ต้องยืนยัน:
+
+1. HTTPS
+2. Desktop / mobile
+3. DNS target
+4. Public/Private repository behavior
+5. API boundary
+6. No exposed secrets
+7. Rollback path
