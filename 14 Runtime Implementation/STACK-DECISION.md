@@ -17,7 +17,7 @@ This decision applies to the first Runtime Vertical Slice (`VS-001`) and does no
 | Initial AI Provider | Gemini | CANDIDATE / TEST |
 | Artifact Storage | Google Drive | TEST PLANNED |
 | V1 Operational Data | Google Sheets | TEST PLANNED |
-| Public Web Layer | gmterminal.today | MIGRATION PLANNED |
+| Public Web Layer | gmterminal.today | APPROVED FOR MIGRATION |
 
 ## Evaluation Criteria
 
@@ -38,11 +38,11 @@ This decision applies to the first Runtime Vertical Slice (`VS-001`) and does no
 
 ## Important Boundary
 
-`gmterminal.today` เป็น Public Web / User Interface candidate ไม่ใช่ Source of Truth และไม่ควรเก็บ secrets หรือ workflow definitions สำคัญไว้ใน frontend
+`gmterminal.today` เป็น Public Web / User Interface ไม่ใช่ Source of Truth และไม่ควรเก็บ secrets หรือ workflow definitions สำคัญไว้ใน frontend
 
 ## Current Gate
 
 n8n = **SELECTED**  
 Gemini = **TEST CANDIDATE**  
 Google Drive / Sheets = **TEST PLANNED**  
-`gmterminal.today` = **MIGRATION PLANNED — DNS/HOSTING NOT CHANGED YET**
+`gmterminal.today` = **APPROVED FOR DIRECT MIGRATION — DNS/HOSTING CUTOVER PENDING**
